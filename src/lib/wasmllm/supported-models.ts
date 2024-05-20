@@ -1,17 +1,27 @@
-import { WebGPUModel } from './wasmllm';
+import { WebGPUModel } from "./wasmllm";
 
 export const SUPPORTED_LOCAL_MODELS: {
   [key: string]: WebGPUModel;
 } = {
-  "dolphin-2.2.1": {
-    simpleName: "Dolphin 2.2.1",
-    modelName: "dolphin-2.2.1-mistral-7b-q4f32_1",
+  // "dolphin-2.2.1": {
+  //   simpleName: "Dolphin 2.2.1",
+  //   modelName: "dolphin-2.2.1-mistral-7b-q4f32_1",
+  //   rootUrl:
+  //     "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1",
+  //   modelParamsUrl:
+  //     "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1/resolve/main/params/",
+  //   wasmUrl:
+  //     "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1/resolve/main/dolphin-2.2.1-mistral-7b-q4f32_1-webgpu.wasm",
+  // },
+  "Mistral-7B-OpenOrca-q4f32_1": {
+    simpleName: "Mistral-7B-OpenOrca-q4f32_1",
+    modelName: "Mistral-7B-OpenOrca-q4f32_1",
     rootUrl:
-      "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1",
+      "https://huggingface.co/Felladrin/mlc-chat-Mistral-7B-OpenOrca-q4f32_1",
     modelParamsUrl:
-      "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1/resolve/main/params/",
+      "https://huggingface.co/Felladrin/mlc-chat-Mistral-7B-OpenOrca-q4f32_1/resolve/main/params/",
     wasmUrl:
-      "https://huggingface.co/hrishioa/mlc-chat-dolphin-2.2.1-mistral-7b-q4f32_1/resolve/main/dolphin-2.2.1-mistral-7b-q4f32_1-webgpu.wasm",
+      "https://huggingface.co/Felladrin/mlc-chat-Mistral-7B-OpenOrca-q4f32_1/resolve/main/Mistral-7B-OpenOrca-q4f32_1-webgpu.wasm",
   },
   "openhermes-2.5": {
     simpleName: "OpenHermes 2.5",
@@ -26,8 +36,7 @@ export const SUPPORTED_LOCAL_MODELS: {
   "glaive-coder": {
     simpleName: "Glaive Coder 7B",
     modelName: "glaive-coder-7b-q4f32_1",
-    rootUrl:
-      "https://huggingface.co/cfahlgren1/wasm-glaive-coder-7b-q4f32_1",
+    rootUrl: "https://huggingface.co/cfahlgren1/wasm-glaive-coder-7b-q4f32_1",
     modelParamsUrl:
       "https://huggingface.co/cfahlgren1/wasm-glaive-coder-7b-q4f32_1/resolve/main/params/",
     wasmUrl:
@@ -36,8 +45,7 @@ export const SUPPORTED_LOCAL_MODELS: {
   "sql-coder": {
     simpleName: "SQLCoder 7B",
     modelName: "sqlcoder-7b-q4f32_1",
-    rootUrl:
-      "https://huggingface.co/cfahlgren1/wasm-sqlcoder-7b-q4f32_1",
+    rootUrl: "https://huggingface.co/cfahlgren1/wasm-sqlcoder-7b-q4f32_1",
     modelParamsUrl:
       "https://huggingface.co/cfahlgren1/wasm-sqlcoder-7b-q4f32_1/resolve/main/params/",
     wasmUrl:
